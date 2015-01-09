@@ -10,10 +10,10 @@ namespace WpfApplication1
 {
     class Serializer
     {
-        public void serialize(List<Item> library)
+        public void serialize(List<Item> library, string file)
         {
             XmlSerializer xs = new XmlSerializer(typeof(List<Item>));
-            using (StreamWriter wr = new StreamWriter("../../library.xml"))
+            using (StreamWriter wr = new StreamWriter(file))
             {
                 xs.Serialize(wr, library);
             }
