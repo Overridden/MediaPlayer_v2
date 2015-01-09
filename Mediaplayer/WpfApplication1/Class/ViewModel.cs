@@ -89,7 +89,10 @@ namespace WpfApplication1
             else if (str.Contains("Image"))
                 node_selected = (int)library_item.IMAGE;
             else if (str.Contains("Video"))
+            {
                 node_selected = (int)library_item.VIDEO;
+                Console.Out.WriteLine("PD");
+        }
             else
                 node_selected = (int)library_item.NONE;
             return;

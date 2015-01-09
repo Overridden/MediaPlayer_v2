@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <folder>Video</folder>
-  <path>C:\Users\Sierra197\Music\YOLO\Calme\Love Lost.mp3</path>
-</Item>
+<ArrayOfItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Item>
+    <folder>Image</folder>
+    <path>C:\Users\Sierra197\Music\YOLO\Calme\Heaven's Call.mp3</path>
+  </Item>
+  <Item>
+    <folder>Image</folder>
+    <path>C:\Users\Sierra197\Music\YOLO\Calme\Heaven's Call.mp3</path>
+  </Item>
+  <Item>
+    <folder>Image</folder>
+    <path>C:\Users\Sierra197\Music\YOLO\Calme\Love Lost.mp3</path>
+  </Item>
+  <Item>
+    <folder>Image</folder>
+    <path>C:\Users\Sierra197\Music\YOLO\Calme\Love Lost.mp3</path>
+  </Item>
+  <Item>
+    <folder>Image</folder>
+    <path>C:\Users\Sierra197\Music\YOLO\Calme\Kanda no Omoi.mp3</path>
+  </Item>
+  <Item>
+    <folder>Image</folder>
+    <path>C:\Users\Sierra197\Music\YOLO\Calme\Kanda no Omoi.mp3</path>
+  </Item>
+</ArrayOfItem>
