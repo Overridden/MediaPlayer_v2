@@ -26,6 +26,7 @@ namespace WpfApplication1
     public partial class MainWindow : Window
     {
         ViewModel vm = new ViewModel();
+        TreeView_manager TreeView1 = new TreeView_manager();
 
         public MainWindow()
         {
