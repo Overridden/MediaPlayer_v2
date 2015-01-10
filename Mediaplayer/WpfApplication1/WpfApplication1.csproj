@@ -51,6 +51,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,6 +74,9 @@
     <Compile Include="Class\Item.cs" />
     <Compile Include="Class\Library_manager.cs" />
     <Compile Include="Class\Serializer.cs" />
+    <Compile Include="Class\TreeView_manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Class\ViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

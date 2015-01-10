@@ -41,9 +41,10 @@ namespace WpfApplication1
                 Console.Out.WriteLine("Adding item...");
                 Item item1 = new Item
                 {
-                    folder = folder_name[node_selected],
+                    folder = folder_name[node_selected - 1],
                     path = ofd.FileName
                 };
+                Console.Out.WriteLine("-->" + folder_name[node_selected - 1] + "<--");
                 tmp.Add(item1);
 
                 // SERIALIZE

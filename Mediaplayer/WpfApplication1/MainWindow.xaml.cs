@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
-using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -26,7 +25,7 @@ namespace WpfApplication1
     public partial class MainWindow : Window
     {
         ViewModel vm = new ViewModel();
-        TreeView_manager TreeView1 = new TreeView_manager();
+        TreeView_manager tvm = new TreeView_manager();
 
         public MainWindow()
         {
@@ -90,6 +89,15 @@ namespace WpfApplication1
         {
             vm.Get_Item_Name(Library.SelectedItem.ToString());
             vm.Add_Item();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            var item = new System.Windows.Controls.TreeViewItem() { Header = "Interesting" };
+            var sub_item = new System.Windows.Controls.TreeViewItem() { Header = "Interesting" };
+            TreeView1.Items.Add("Hello");
+            TreeView1.Items.Add(item);
+            item.Items.Add(sub_item);
         }
     }
 }
