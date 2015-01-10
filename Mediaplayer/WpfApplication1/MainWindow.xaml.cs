@@ -38,7 +38,7 @@ namespace WpfApplication1
         {
             this.Left = 30;
             this.Top = 30;
-            vm.Fill_library(file, Library);
+            vm.Init_library(Library, file);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -93,17 +93,13 @@ namespace WpfApplication1
             vm.Add_Item(file);
         }
 
-        private void create_playlist_Click(object sender, RoutedEventArgs e)
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void add_to_playlist_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void delete_from_playlist_Click(object sender, RoutedEventArgs e)
+        // SAVE BUTTON
+        private void Button_Click_5(object sender, RoutedEventArgs e)
         {
 
         }

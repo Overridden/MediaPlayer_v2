@@ -104,9 +104,10 @@ namespace WpfApplication1
                 lm.Add_Item(node_selected, file);
         }
 
-        public void Fill_library(string file, System.Windows.Controls.TreeView library)
+        public void Init_library(System.Windows.Controls.TreeView library, string file)
         {
-            lm.fill_library(file, library);
+            lm.init_library(library);
+            lm.fill_library(file);
         }
 
         private void timer_Tick(MediaElement MediaElement1, Image Image, System.Windows.Controls.Button Button1, System.Windows.Controls.Button Button2, System.Windows.Controls.Button Button4, Slider Slider1, Slider Slider2)
