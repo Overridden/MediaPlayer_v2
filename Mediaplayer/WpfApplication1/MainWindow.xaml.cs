@@ -127,7 +127,7 @@ namespace WpfApplication1
         // SAVE BUTTON
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-
+            vm.Save_CurrentPlaylist(file);
         }
     }
 }

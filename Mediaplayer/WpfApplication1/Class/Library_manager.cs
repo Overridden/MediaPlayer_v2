@@ -104,5 +104,39 @@ namespace WpfApplication1
                 }
             }
         }
+        public void Save_CurrentPlaylist(string file)
+        {
+            int i = 1;
+            string location = "../../Playlists/MyPlaylist.xml";
+            Console.Out.WriteLine(" Myplaylist name : " + location);
+
+            File.Create(location);
+
+            // DESERIALIZE
+            Deserializer ds = new Deserializer();
+            Serializer s = new Serializer();
+            Console.Out.WriteLine("Checking file " + file);
+            if (ds.check_file(file) == true)
+            {
+                Console.Out.WriteLine("Deserializing...");
+                tmp = ds.deserialize(file);
+
+                // SERIALIZE
+                Console.Out.WriteLine("Serializing...");
+                //while (s.check_file(location) == true)
+                //  i++;
+                //location = "../../Playlists/MyPlaylist-" + i;
+                File.Create(location);
+
+                s.serialize(tmp, location);
+
+                Console.WriteLine("[Folder-]\t[File-----------------------------------------------------------------]");
+                foreach (Item item in tmp)
+                {
+                    Console.WriteLine("####" + item.folder + "\t####" + item.path);
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }

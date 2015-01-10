@@ -122,6 +122,12 @@ namespace WpfApplication1
             lm.fill_library(file);
         }
 
+        public void Save_CurrentPlaylist(string file)
+        {
+            Console.WriteLine("Save_CurrentPLaylist");
+            lm.Save_CurrentPlaylist(file);
+        }
+
         private bool play(MediaElement MediaElement1, Image Image, System.Windows.Controls.Button Button1, System.Windows.Controls.Button Button2, System.Windows.Controls.Button Button4, Slider Slider1, Slider Slider2)
         {
             if (this.playing == false && this.loaded == true)
