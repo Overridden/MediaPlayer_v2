@@ -24,6 +24,7 @@ namespace WpfApplication1
 
     public partial class MainWindow : Window
     {
+        private string file = "../../library.xml";
         ViewModel vm = new ViewModel();
         TreeView_manager tvm = new TreeView_manager();
 
@@ -37,6 +38,7 @@ namespace WpfApplication1
         {
             this.Left = 30;
             this.Top = 30;
+            vm.Fill_library(file, Library);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -88,16 +90,7 @@ namespace WpfApplication1
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
             vm.Get_Item_Name(Library.SelectedItem.ToString());
-            vm.Add_Item();
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            var item = new System.Windows.Controls.TreeViewItem() { Header = "Interesting" };
-            var sub_item = new System.Windows.Controls.TreeViewItem() { Header = "Interesting" };
-            TreeView1.Items.Add("Hello");
-            TreeView1.Items.Add(item);
-            item.Items.Add(sub_item);
+            vm.Add_Item(file);
         }
     }
 }

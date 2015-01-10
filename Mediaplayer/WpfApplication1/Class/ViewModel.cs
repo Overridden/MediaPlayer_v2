@@ -98,10 +98,15 @@ namespace WpfApplication1
             return;
         }
 
-        public void Add_Item()
+        public void Add_Item(string file)
         {
             if (node_selected != (int)library_item.NONE)
-                lm.Add_Item(node_selected);
+                lm.Add_Item(node_selected, file);
+        }
+
+        public void Fill_library(string file, System.Windows.Controls.TreeView library)
+        {
+            lm.fill_library(file, library);
         }
 
         private void timer_Tick(MediaElement MediaElement1, Image Image, System.Windows.Controls.Button Button1, System.Windows.Controls.Button Button2, System.Windows.Controls.Button Button4, Slider Slider1, Slider Slider2)
