@@ -247,12 +247,30 @@ namespace WpfApplication1 {
             return;
             case 11:
             this.create_playlist = ((System.Windows.Controls.Button)(target));
+            
+            #line 28 "..\..\MainWindow.xaml"
+            this.create_playlist.Click += new System.Windows.RoutedEventHandler(this.create_playlist_Click);
+            
+            #line default
+            #line hidden
             return;
             case 12:
             this.add_to_playlist = ((System.Windows.Controls.Button)(target));
+            
+            #line 29 "..\..\MainWindow.xaml"
+            this.add_to_playlist.Click += new System.Windows.RoutedEventHandler(this.add_to_playlist_Click);
+            
+            #line default
+            #line hidden
             return;
             case 13:
             this.delete_from_playlist = ((System.Windows.Controls.Button)(target));
+            
+            #line 30 "..\..\MainWindow.xaml"
+            this.delete_from_playlist.Click += new System.Windows.RoutedEventHandler(this.delete_from_playlist_Click);
+            
+            #line default
+            #line hidden
             return;
             }
             this._contentLoaded = true;

@@ -25,9 +25,9 @@
         <Button x:Name="DeleteButton" Content="Delete" HorizontalAlignment="Left" Margin="1222,224,0,0" VerticalAlignment="Top" Width="76"/>
         <TreeView HorizontalAlignment="Left" Height="282" Margin="1138,298,0,0" VerticalAlignment="Top" Width="296" Background="#FF5C5C5C"/>
         <Label Content="Playlist" HorizontalAlignment="Left" Margin="1136,264,0,0" VerticalAlignment="Top" Width="191" Foreground="White" Height="32"/>
-        <Button x:Name="create_playlist" Content="Create" HorizontalAlignment="Left" Margin="1142,600,0,0" VerticalAlignment="Top" Width="74"/>
-        <Button x:Name="add_to_playlist" Content="Add" HorizontalAlignment="Left" Margin="1233,600,0,0" VerticalAlignment="Top" Width="74"/>
-        <Button x:Name="delete_from_playlist" Content="Delete" HorizontalAlignment="Left" Margin="1328,600,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button x:Name="create_playlist" Content="Create" HorizontalAlignment="Left" Margin="1142,600,0,0" VerticalAlignment="Top" Width="74" Click="create_playlist_Click"/>
+        <Button x:Name="add_to_playlist" Content="Add" HorizontalAlignment="Left" Margin="1233,600,0,0" VerticalAlignment="Top" Width="74" Click="add_to_playlist_Click"/>
+        <Button x:Name="delete_from_playlist" Content="Delete" HorizontalAlignment="Left" Margin="1328,600,0,0" VerticalAlignment="Top" Width="76" Click="delete_from_playlist_Click"/>
 
     </Grid>
 </Window>

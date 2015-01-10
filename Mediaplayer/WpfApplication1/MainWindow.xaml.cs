@@ -92,5 +92,20 @@ namespace WpfApplication1
             vm.Get_Item_Name(Library.SelectedItem.ToString());
             vm.Add_Item(file);
         }
+
+        private void create_playlist_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void add_to_playlist_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void delete_from_playlist_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
