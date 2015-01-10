@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Controls.Primitives;
 using System.Threading;
 
 namespace WpfApplication1
@@ -27,6 +28,7 @@ namespace WpfApplication1
         private string file = "../../library.xml";
         ViewModel vm = new ViewModel();
         TreeView_manager tvm = new TreeView_manager();
+        private bool userIsDraggingSlider = false;
 
         public MainWindow()
         {
@@ -68,6 +70,27 @@ namespace WpfApplication1
             vm.me_manageSliderLevel(e, MediaElement1, Image, Button1, Button2, Button4, Slider1, Slider2);
         }
 
+        private void Slider1_DragStarted(object sender, DragStartedEventArgs e)
+        {
+            userIsDraggingSlider = true;
+        }
+
+        private void Slider1_DragCompleted(object sender, DragCompletedEventArgs e)
+        {
+            userIsDraggingSlider = false;
+            MediaElement1.Position = TimeSpan.FromSeconds(Slider1.Value);
+        }
+
+        public bool getuserIsDraggingSlider()
+        {
+            return userIsDraggingSlider;
+        }
+
+        private void Slider1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            Timer.Text = TimeSpan.FromSeconds(Slider1.Value).ToString(@"hh\:mm\:ss");
+        }
+
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             vm.me_doPlay(MediaElement1, Image, Button1, Button2, Button4, Slider1, Slider2);
@@ -89,8 +112,11 @@ namespace WpfApplication1
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            vm.Get_Item_Name(Library.SelectedItem.ToString());
-            vm.Add_Item(file);
+            if (Library.SelectedItem != null)
+            {
+                vm.Get_Item_Name(Library.SelectedItem.ToString());
+                vm.Add_Item(file);
+            }
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)

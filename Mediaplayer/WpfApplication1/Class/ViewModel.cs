@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
+using System.Windows.Threading;
+using System.Windows.Controls.Primitives;
 
 namespace WpfApplication1
 {
@@ -75,11 +77,21 @@ namespace WpfApplication1
             {
                 new NullReferenceException("Error while opening the file.");
             }
-            System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
-            //dispatcherTimer.Tick += new EventHandler(timer_Tick);
-            dispatcherTimer.Tick += (sender, e) => timer_Tick(MediaElement1, Image, Button1, Button2, Button4, Slider1, Slider2);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
-            dispatcherTimer.Start();
+
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += (sender, e) => timer_Tick(MediaElement1, Slider1);
+            timer.Start();
+        }
+
+        private void timer_Tick(MediaElement MediaElement1, Slider Slider1)
+        {
+            if ((MediaElement1.Source != null) && (MediaElement1.NaturalDuration.HasTimeSpan))
+            {
+                Slider1.Minimum = 0;
+                Slider1.Maximum = MediaElement1.NaturalDuration.TimeSpan.TotalSeconds;
+                Slider1.Value = MediaElement1.Position.TotalSeconds;
+            }
         }
 
         public void Get_Item_Name(string str)
@@ -108,11 +120,6 @@ namespace WpfApplication1
         {
             lm.init_library(library);
             lm.fill_library(file);
-        }
-
-        private void timer_Tick(MediaElement MediaElement1, Image Image, System.Windows.Controls.Button Button1, System.Windows.Controls.Button Button2, System.Windows.Controls.Button Button4, Slider Slider1, Slider Slider2)
-        {
-            Slider1.Value = MediaElement1.Position.TotalSeconds;
         }
 
         private bool play(MediaElement MediaElement1, Image Image, System.Windows.Controls.Button Button1, System.Windows.Controls.Button Button2, System.Windows.Controls.Button Button4, Slider Slider1, Slider Slider2)

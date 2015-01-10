@@ -24,3 +24,16 @@ C:\Users\Sierra197\Documents\Visual Studio 2013\Projects\Mediaplayer\WpfApplicat
 C:\Users\Sierra197\Documents\Visual Studio 2013\Projects\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.exe
 C:\Users\Sierra197\Documents\Visual Studio 2013\Projects\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.pdb
 C:\Users\Sierra197\Documents\Visual Studio 2013\Projects\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.exe
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.pdb
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\bin\Debug\WpfApplication1.exe
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\bin\Debug\WpfApplication1.pdb
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\MainWindow.baml
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\MainWindow.g.cs
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\App.g.cs
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
