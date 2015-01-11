@@ -125,6 +125,27 @@ namespace WpfApplication1
             lm.fill_library(file);
         }
 
+        public void clean_library(string file)
+        {
+            lm.clean_library(file);
+        }
+
+        public void load_playlist()
+        {
+            string new_playlist;
+            OpenFileDialog ofd;
+            ofd = new OpenFileDialog();
+            ofd.AddExtension = true;
+            ofd.DefaultExt = "*.*";
+            ofd.Filter = "XML Files (*.xml)|*.xml";
+            ofd.ShowDialog();
+
+            new_playlist = ofd.FileName;
+
+            Console.WriteLine(new_playlist);
+            lm.fill_library(new_playlist);
+        }
+
         public void Save_CurrentPlaylist(string file)
         {
             Console.WriteLine("Save_CurrentPLaylist");

@@ -37,3 +37,16 @@ C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\
 C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.g.resources
 C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
 C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.exe
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.pdb
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\bin\Debug\WpfApplication1.exe
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\bin\Debug\WpfApplication1.pdb
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\MainWindow.baml
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\MainWindow.g.cs
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\App.g.cs
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache

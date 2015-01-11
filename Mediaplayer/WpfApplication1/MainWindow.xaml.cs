@@ -126,7 +126,8 @@ namespace WpfApplication1
 
         private void open_playlist_Click(object sender, RoutedEventArgs e)
         {
-
+            vm.clean_library(file);
+            vm.load_playlist();
         }
 
         private void DeleteButton_Click_1(object sender, RoutedEventArgs e)

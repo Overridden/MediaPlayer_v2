@@ -103,11 +103,45 @@ namespace WpfApplication1
             List<Item> tmp;
             Deserializer ds = new Deserializer();
 
+            Console.Out.WriteLine(file);
+
             tmp = ds.deserialize(file);
             for (int i = 0; i < tmp.Count; i++)
             {
                 item = tmp[i];
+                Console.Out.WriteLine(item.path);
                 sort_and_add(item);
+            }
+        }
+
+
+        public void remove_items(Item item)
+        {
+            if (item.folder == "Video")
+            {
+                video.Items.Remove(item.path);
+            }
+            else if (item.folder == "Music")
+            {
+                music.Items.Remove(item.path);
+            }
+            else if (item.folder == "Image")
+            {
+                image.Items.Remove(item.path);
+            }
+        }
+
+        public void clean_library(string file)
+        {
+            Item item;
+            List<Item> tmp;
+            Deserializer ds = new Deserializer();
+
+            tmp = ds.deserialize(file);
+            for (int i = 0; i < tmp.Count; i++)
+            {
+                item = tmp[i];
+                remove_items(item);
             }
         }
 

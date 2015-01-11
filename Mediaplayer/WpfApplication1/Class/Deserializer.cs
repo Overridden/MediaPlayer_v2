@@ -21,7 +21,7 @@ namespace WpfApplication1
             List<Item> library_v2;
 
             XmlSerializer dxs = new XmlSerializer(typeof(List<Item>));
-            using (StreamReader rd = new StreamReader("../../library.xml"))
+            using (StreamReader rd = new StreamReader(file))
             {
                 library_v2 = dxs.Deserialize(rd) as List<Item>;
             }

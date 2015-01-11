@@ -156,4 +156,20 @@
     <folder>Image</folder>
     <path>C:\Users\Sierra197\Pictures\ez.jpg</path>
   </Item>
+  <Item>
+    <folder>Image</folder>
+    <path>C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\Playlists\MyPlaylist-6.xml</path>
+  </Item>
+  <Item>
+    <folder>Image</folder>
+    <path>C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\Playlists\MyPlaylist-4.xml</path>
+  </Item>
+  <Item>
+    <folder>Image</folder>
+    <path>C:\Users\Gaston\Documents\Nouveau dossier\MediaPlayer_v2\Mediaplayer\WpfApplication1\Playlists\MyPlaylist-6.xml</path>
+  </Item>
+  <Item>
+    <folder>Music</folder>
+    <path />
+  </Item>
 </ArrayOfItem>
