@@ -29,9 +29,9 @@
         </Slider>
         <Label Content="Volume" HorizontalAlignment="Left" Margin="1258,671,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="2.169,0.56" Height="26" Width="52"/>
         <TreeView x:Name="Library" HorizontalAlignment="Left" Height="578" Margin="1146,9,0,0" VerticalAlignment="Top" Width="305" Background="#FF5C5C5C" FontWeight="Bold" Foreground="White" BorderBrush="White"/>
-        <Button x:Name="AddButton" Content="Add" HorizontalAlignment="Left" Margin="1148,600,0,0" VerticalAlignment="Top" Width="80" Click="AddButton_Click"/>
-        <Button x:Name="DeleteButton" Content="Delete" HorizontalAlignment="Left" Margin="1259,600,0,0" VerticalAlignment="Top" Width="80"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="1368,600,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="AddButton" Content="Add" HorizontalAlignment="Left" Margin="1150,600,0,0" VerticalAlignment="Top" Width="60" Click="AddButton_Click"/>
+        <Button x:Name="DeleteButton" Content="Delete" HorizontalAlignment="Left" Margin="1220,600,0,0" VerticalAlignment="Top" Width="60"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="1290,600,0,0" VerticalAlignment="Top" Width="60" Click="Button_Click_6"/>
         <TextBlock x:Name="Timer" HorizontalAlignment="Left" Margin="110,675,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="92" Text="00:00:00" FontSize="16" RenderTransformOrigin="0.475,0.259" TextDecorations="{x:Null}">
             <TextBlock.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -40,5 +40,6 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
+        <Button x:Name="open_playlist" Content="Open playlist" HorizontalAlignment="Left" Margin="1360,600,0,0" VerticalAlignment="Top" Width="87" Click="open_playlist_Click"/>
     </Grid>
 </Window>

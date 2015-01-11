@@ -124,8 +124,7 @@ namespace WpfApplication1
 
         }
 
-        // SAVE BUTTON
-        private void Button_Click_5(object sender, RoutedEventArgs e)
+        private void Button_Click_6(object sender, RoutedEventArgs e)
         {
             vm.Save_CurrentPlaylist(file);
         }

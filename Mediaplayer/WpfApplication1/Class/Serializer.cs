@@ -10,6 +10,13 @@ namespace WpfApplication1
 {
     class Serializer
     {
+        public bool check_file(string file)
+        {
+            string curFile = file;
+            Console.Out.WriteLine("EXIST OR NOT?!" + File.Exists(curFile) + " file " + file);
+            return File.Exists(curFile);
+        }
+
         public void serialize(List<Item> library, string file)
         {
             XmlSerializer xs = new XmlSerializer(typeof(List<Item>));
