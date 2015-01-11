@@ -115,18 +115,29 @@ namespace WpfApplication1
             if (Library.SelectedItem != null)
             {
                 vm.Get_Item_Name(Library.SelectedItem.ToString());
-                vm.Add_Item(file);
+                vm.Add_Item(file, Library);
             }
-        }
-
-        private void DeleteButton_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
             vm.Save_CurrentPlaylist(file);
+        }
+
+        private void open_playlist_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeleteButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Controls.TreeViewItem lolol = new System.Windows.Controls.TreeViewItem() { Header = "lolol" };
+            System.Windows.Controls.TreeViewItem caca = new System.Windows.Controls.TreeViewItem() { Header = "caca" };
+            Library.Items.Add(lolol);
+            lolol.Items.Add(caca);
+            //Library.Items.Refresh();
+            //Library.UpdateLayout();
+            Console.Out.WriteLine("UPDATE MOZER FEUKEUR!");
         }
     }
 }

@@ -42,7 +42,6 @@ namespace WpfApplication1
             {
                 Console.Out.WriteLine("Deserializing...");
                 tmp = ds.deserialize(file);
-
                 // FILL THE LIBRARY
                 Console.Out.WriteLine("Adding item...");
                 Item item1 = new Item
@@ -52,11 +51,10 @@ namespace WpfApplication1
                 };
                 Console.Out.WriteLine("-->" + folder_name[node_selected - 1] + "<--");
                 tmp.Add(item1);
-
+                sort_and_add(item1);
                 // SERIALIZE
                 Console.Out.WriteLine("Serializing...");
                 s.serialize(tmp, file);
-
                 Console.WriteLine("[Folder-]\t[File-----------------------------------------------------------------]");
                 foreach (Item item in tmp)
                 {
@@ -71,12 +69,32 @@ namespace WpfApplication1
             }
         }
 
+        private void sort_and_add(Item item)
+        {
+            if (item.folder == "Video")
+            {
+                video.Items.Add(item.path);
+            }
+            else if (item.folder == "Music")
+            {
+                music.Items.Add(item.path);
+            }
+            else if (item.folder == "Image")
+            {
+                image.Items.Add(item.path);
+            }
+        }
+
         public void init_library(System.Windows.Controls.TreeView library)
         {
             library.Items.Add(f_library);
             f_library.Items.Add(image);
             f_library.Items.Add(video);
             f_library.Items.Add(music);
+            f_library.IsExpanded = true;
+            image.IsExpanded = true;
+            video.IsExpanded = true;
+            music.IsExpanded = true;
         }
 
         public void fill_library(string file)
@@ -89,18 +107,7 @@ namespace WpfApplication1
             for (int i = 0; i < tmp.Count; i++)
             {
                 item = tmp[i];
-                if (item.folder == "Video")
-                {
-                    video.Items.Add(item.path);
-                }
-                else if (item.folder == "Music")
-                {
-                    music.Items.Add(item.path);
-                }
-                else if (item.folder == "Image")
-                {
-                    image.Items.Add(item.path);
-                }
+                sort_and_add(item);
             }
         }
 
@@ -130,7 +137,6 @@ namespace WpfApplication1
             {
                 Console.Out.WriteLine("Deserializing...");
                 playlist_tmp = ds.deserialize(file);
-
                 // SERIALIZE
                 Console.Out.WriteLine("Serializing...");
                 ++i;
@@ -140,24 +146,25 @@ namespace WpfApplication1
                     Create_file(location);
                     location = "../../Playlists/MyPlaylist-" + ++i + ".xml";
                 }
-
-                //File.Create(location);
-                //Console.Out.WriteLine("location ok");
-
                 s.serialize(playlist_tmp, location);
-
-                Console.WriteLine("[Folder-]\t[File-----------------------------------------------------------------]");
-                foreach (Item item in playlist_tmp)
-                {
-                    Console.WriteLine("####" + item.folder + "\t####" + item.path);
-                }
-                Console.WriteLine();
+                //Console.WriteLine("[Folder-]\t[File-----------------------------------------------------------------]");
+                //foreach (Item item in playlist_tmp)
+                //{
+                //    Console.WriteLine("####" + item.folder + "\t####" + item.path);
+                //}
+                //Console.WriteLine();
             }
             else
             {
                 Create_file(playlist_tmp, location);
                 Save_CurrentPlaylist(location);
             }
+        }
+
+        public void refresh(System.Windows.Controls.TreeView library)
+        {
+            library.Items.Refresh();
+            image.Items.Refresh();
         }
     }
 }

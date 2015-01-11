@@ -110,10 +110,13 @@ namespace WpfApplication1
             return;
         }
 
-        public void Add_Item(string file)
+        public void Add_Item(string file, System.Windows.Controls.TreeView library)
         {
             if (node_selected != (int)library_item.NONE)
+            {
                 lm.Add_Item(node_selected, file);
+                lm.refresh(library);
+            }
         }
 
         public void Init_library(System.Windows.Controls.TreeView library, string file)
