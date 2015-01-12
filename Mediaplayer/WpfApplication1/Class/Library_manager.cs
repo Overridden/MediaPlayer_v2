@@ -68,7 +68,8 @@ namespace WpfApplication1
                 Item item1 = new Item
                 {
                     folder = folder_name[node_selected - 1],
-                    path = ofd.FileName
+                    path = ofd.FileName,
+                    file_name = ofd.SafeFileName
                 };
                 Console.Out.WriteLine("-->" + folder_name[node_selected - 1] + "<--");
                 tmp.Add(item1);
@@ -102,19 +103,19 @@ namespace WpfApplication1
             System.Windows.Controls.TreeViewItem item_node = new System.Windows.Controls.TreeViewItem() { Header = "item" };
             if (item.folder == "Video")
             {
-                item_node.Header = item.path;
+                item_node.Header = item.file_name;
                 video.Items.Add(item_node);
                 ++video_count;
             }
             else if (item.folder == "Music")
             {
-                item_node.Header = item.path;
+                item_node.Header = item.file_name;
                 music.Items.Add(item_node);
                 ++music_count;
             }
             else if (item.folder == "Image")
             {
-                item_node.Header = item.path;
+                item_node.Header = item.file_name;
                 image.Items.Add(item_node);
                 ++image_count;
             }
@@ -199,10 +200,14 @@ namespace WpfApplication1
                 Console.Out.WriteLine("Serializing...");
                 ++i;
                 location = "../../Playlists/MyPlaylist-" + i + ".xml";
-                while (s.check_file(location) == false && i < 10)
+                while (i < 10)
                 {
-                    Create_file(location);
-                    location = "../../Playlists/MyPlaylist-" + ++i + ".xml";
+                    if (s.check_file(location) == true)
+                    {
+                        Create_file(location);
+                        location = "../../Playlists/MyPlaylist-" + i + ".xml";
+                    }
+                    ++i;
                 }
                 location = "../../Playlists/MyPlaylist-" + choice + ".xml";
                 s.serialize(playlist_tmp, location);

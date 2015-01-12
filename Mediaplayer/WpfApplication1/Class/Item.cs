@@ -10,5 +10,6 @@ namespace WpfApplication1
     {
         public string folder { get; set; }
         public string path { get; set; }
+        public string file_name { get; set; }
     }
 }
