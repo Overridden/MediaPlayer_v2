@@ -29,7 +29,7 @@ namespace WpfApplication1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             choice = 1;
-            Application.Current.Shutdown();
+            this.Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
