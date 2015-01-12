@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApplication1.save_box"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="save_box" Height="167" Width="503" ResizeMode="NoResize" Topmost="True" Closing="Window_Closing">
+    <Grid>
+        <Button x:Name="button1" Content="MyPlaylist-1" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Button_Click"/>
+        <Button x:Name="button2" Content="MyPlaylist-2" HorizontalAlignment="Left" Margin="115,20,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Button_Click_1"/>
+        <Button x:Name="button3" Content="MyPlaylist-3" HorizontalAlignment="Left" Margin="210,20,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Button_Click_2"/>
+        <Button x:Name="button4" Content="MyPlaylist-4" HorizontalAlignment="Left" Margin="305,20,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Button_Click_3"/>
+        <Button x:Name="button5" Content="MyPlaylist-5" HorizontalAlignment="Left" Margin="400,20,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Button_Click_4"/>
+        <Button x:Name="button6" Content="MyPlaylist-6" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Button_Click_5"/>
+        <Button x:Name="button7" Content="MyPlaylist-7" HorizontalAlignment="Left" Margin="115,80,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Button_Click_6"/>
+        <Button x:Name="button8" Content="MyPlaylist-8" HorizontalAlignment="Left" Margin="210,80,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Button_Click_7"/>
+        <Button x:Name="button9" Content="MyPlaylist-9" HorizontalAlignment="Left" Margin="305,80,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Button_Click_8"/>
+        <Button x:Name="button10" Content="MyPlaylist-10" HorizontalAlignment="Left" Margin="400,80,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="Button_Click_9"/>
+
+    </Grid>
+</Window>
