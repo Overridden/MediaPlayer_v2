@@ -1,0 +1,12 @@
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\bin\Release\WpfApplication1.exe.config
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\bin\Release\WpfApplication1.exe
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\bin\Release\WpfApplication1.pdb
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Release\MainWindow.baml
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Release\MainWindow.g.cs
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Release\App.g.cs
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Release\WpfApplication1_MarkupCompile.cache
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Release\WpfApplication1.g.resources
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Release\WpfApplication1.Properties.Resources.resources
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Release\WpfApplication1.csproj.GenerateResource.Cache
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Release\WpfApplication1.exe
+C:\Users\rose_r\Documents\GitHub\MediaPlayer_v2\Mediaplayer\WpfApplication1\obj\Release\WpfApplication1.pdb

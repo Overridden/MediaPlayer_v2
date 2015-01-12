@@ -248,7 +248,7 @@ namespace WpfApplication1
         {
             if (this.playing == false && this.loaded == true)
             {
-                Button1.Content = "Pause";
+                //Button1.Content = "Pause";
                 MediaElement1.Play();
                 this.playing = true;
                 vm.playing = true;

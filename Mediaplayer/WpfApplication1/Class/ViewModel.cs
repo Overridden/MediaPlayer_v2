@@ -44,7 +44,7 @@ namespace WpfApplication1
             MediaElement1.Stop();
             MediaElement1.Opacity = 0;
             Image.Opacity = 1;
-            Button1.Content = "Play";
+            //Button1.Content = "Play";
             this.playing = false;
             lm.playing = false;
             this.stoped = true;
@@ -55,7 +55,7 @@ namespace WpfApplication1
         {
             if (play(MediaElement1, Image, Button1, Button2, Button4, Slider1, Slider2) == false)
             {
-                Button1.Content = "Play";
+                //Button1.Content = "Play";
                 MediaElement1.Pause();
                 this.playing = false;
                 lm.playing = false;
@@ -176,7 +176,7 @@ namespace WpfApplication1
         {
             if (this.playing == false && this.loaded == true)
             {
-                Button1.Content = "Pause";
+                //Button1.Content = "Pause";
                 MediaElement1.Play();
                 this.playing = true;
                 lm.playing = true;
