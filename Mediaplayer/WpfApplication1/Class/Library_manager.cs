@@ -216,11 +216,12 @@ namespace WpfApplication1
 
         private void double_click(MediaElement MediaElement1, string path, Image Image, System.Windows.Controls.Button Button1, System.Windows.Controls.Button Button2, System.Windows.Controls.Button Button4, Slider Slider1, Slider Slider2)
         {
-            Console.Out.WriteLine("EVENT DOUBLE CLICK");
+            Console.Out.WriteLine("Opening file " + path);
             try
             {
                 MediaElement1.Source = new Uri(path);
                 loaded = true;
+                vm.loaded = true;
                 play(MediaElement1, Image, Button1, Button2, Button4, Slider1, Slider2);
             }
             catch
@@ -250,8 +251,9 @@ namespace WpfApplication1
                 Button1.Content = "Pause";
                 MediaElement1.Play();
                 this.playing = true;
+                vm.playing = true;
                 Image.Opacity = 0;
-                if (this.stoped == true)
+                if (this.stoped == true && vm.stoped == true)
                     MediaElement1.Opacity = 1;
             }
             else

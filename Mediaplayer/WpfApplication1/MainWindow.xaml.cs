@@ -98,7 +98,8 @@ namespace WpfApplication1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            vm.me_doOpen(MediaElement1, Image, Button1, Button2, Button4, Slider1, Slider2);
+            if (vm.me_doOpen(MediaElement1, Image, Button1, Button2, Button4, Slider1, Slider2) == false)
+                Console.Out.WriteLine("Aborting the file opening");
         }
 
         private void MediaElement1_MediaOpened(object sender, RoutedEventArgs e)
@@ -133,7 +134,8 @@ namespace WpfApplication1
         private void open_playlist_Click(object sender, RoutedEventArgs e)
         {
             vm.clean_library(file, Library);
-            vm.load_playlist(MediaElement1, Image, Button1, Button2, Button4, Slider1, Slider2);
+            if (vm.load_playlist(MediaElement1, Image, Button1, Button2, Button4, Slider1, Slider2) == false)
+                Console.Out.WriteLine("Aborting the file opening");
         }
 
         private void DeleteButton_Click_1(object sender, RoutedEventArgs e)

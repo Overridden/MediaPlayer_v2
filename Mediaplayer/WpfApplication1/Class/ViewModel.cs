@@ -21,15 +21,18 @@ namespace WpfApplication1
 {
     public class ViewModel
     {
-        private bool    playing = false;
-        private bool    loaded = false;
-        private bool    stoped = false;
+        public bool    playing { set; get; }
+        public bool    loaded { set; get; }
+        public bool    stoped { set; get; }
         private int     node_selected = 0;
         private enum    library_item {MUSIC=1, IMAGE, VIDEO, NONE };
         Library_manager lm = new Library_manager();
 
         public ViewModel()
         {
+            playing = false;
+            loaded = false;
+            stoped = false;
             lm.playing = false;
             lm.loaded = false;
             lm.stoped = false;
@@ -70,7 +73,7 @@ namespace WpfApplication1
             MediaElement1.Position = ts;
         }
 
-        public void me_doOpen(MediaElement MediaElement1, Image Image, System.Windows.Controls.Button Button1, System.Windows.Controls.Button Button2, System.Windows.Controls.Button Button4, Slider Slider1, Slider Slider2)
+        public bool me_doOpen(MediaElement MediaElement1, Image Image, System.Windows.Controls.Button Button1, System.Windows.Controls.Button Button2, System.Windows.Controls.Button Button4, Slider Slider1, Slider Slider2)
         {
             OpenFileDialog ofd;
             ofd = new OpenFileDialog();
@@ -78,6 +81,8 @@ namespace WpfApplication1
             ofd.DefaultExt = "*.*";
             ofd.Filter = "Media Files (*.*)|*.*";
             ofd.ShowDialog();
+            if (ofd.FileName == "")
+                return false;
             try
             {
                 MediaElement1.Source = new Uri(ofd.FileName);
@@ -93,6 +98,7 @@ namespace WpfApplication1
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += (sender, e) => timer_Tick(MediaElement1, Slider1);
             timer.Start();
+            return true;
         }
 
         private void timer_Tick(MediaElement MediaElement1, Slider Slider1)
@@ -143,7 +149,7 @@ namespace WpfApplication1
             lm.clean_library(file, library);
         }
 
-        public void load_playlist(MediaElement MediaElement1, Image Image, System.Windows.Controls.Button Button1, System.Windows.Controls.Button Button2, System.Windows.Controls.Button Button4, Slider Slider1, Slider Slider2)
+        public bool load_playlist(MediaElement MediaElement1, Image Image, System.Windows.Controls.Button Button1, System.Windows.Controls.Button Button2, System.Windows.Controls.Button Button4, Slider Slider1, Slider Slider2)
         {
             string new_playlist;
             OpenFileDialog ofd;
@@ -152,11 +158,12 @@ namespace WpfApplication1
             ofd.DefaultExt = "*.*";
             ofd.Filter = "XML Files (*.xml)|*.xml";
             ofd.ShowDialog();
-
+            if (ofd.FileName == "")
+                return false;
             new_playlist = ofd.FileName;
-
             Console.WriteLine(new_playlist);
             lm.fill_library(new_playlist, MediaElement1, Image, Button1, Button2, Button4, Slider1, Slider2);
+            return true;
         }
 
         public void Save_CurrentPlaylist(string file)
